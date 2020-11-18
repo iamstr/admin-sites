@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
+  plugins: ["compat"],
   extends: ["airbnb-base"],
   parserOptions: {
     ecmaVersion: 12,
@@ -10,6 +11,7 @@ module.exports = {
   },
   rules: {
     quotes: ["error", "double"],
-    "comma-dangle": ["error", "true"]
+    "comma-dangle": ["error", "true"],
+    "compat/compat": "error"
   }
 };

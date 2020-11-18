@@ -1,23 +1,15 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: "./index.js",
   output: {
-    // eslint-disable-next-line quotes
     filename: "bundle.js",
-    path: path.resolve(__dirname)
+    path: path.resolve(__dirname, "dist"),
+    chunkLoading: false,
+    wasmLoading: false
   },
 
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "My App",
-      body: "",
-      filename: "index.html",
-      cache: true
-    }),
-    new MiniCssExtractPlugin()
-  ],
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
@@ -32,5 +24,6 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  devtool: "source-map"
 };

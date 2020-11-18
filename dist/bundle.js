@@ -1,1 +1,0 @@
-(()=>{document.write("hey");const e=document.createElement("div");for(let n in 20)e.innerHTML=n,document.getElementsByTagName("body")[0].appendChild(e)})();
