@@ -16,22 +16,49 @@
               <a href="javascript:void(0)" class="url-side">Home</a>
             </li>
             <li class="nav-list">
-              <a href="javascript:void(0)" class="url-side">Setting</a>
+              <a href="setting.html" class="url-side">Setting</a>
             </li>
             <li class="nav-list">
-              <a href="javascript:void(0)" class="url-side">User</a>
+              <a href="user.html" class="url-side">User</a>
             </li>
             <li class="nav-list">
-              <a href="javascript:void(0)" class="url-side">Request</a>
+              <a href="request.html" class="url-side">Request</a>
+            </li>
+            <li class="nav-list">
+              <a href="approval.html" class="url-side">Approval</a>
             </li>
           </ul>
         </nav>
       </aside>
       <main class="main" role="main">
         <article class="article">
-          <figure class="figure">
+          <h3 class="article-header">Please Add Your Signature</h3>
+          <input id="fileInput" type="file" style="display: none" />
+          <figure
+            class="figure"
+            onclick="document.getElementById('fileInput').click();"
+          >
             <img src="./assets/image/add.svg" alt="" />
           </figure>
+        </article>
+        <article class="article">
+          <h3 class="article-header">Your Requests</h3>
+          <div class="request-status row">
+            <h5 class="status-request">Request Name</h5>
+            <h5 class="status-request">Stage</h5>
+          </div>
+          <div class="request-status row">
+            <h5 class="status-request">Request Name</h5>
+            <h5 class="status-request">Stage</h5>
+          </div>
+          <div class="request-status row">
+            <h5 class="status-request">Request Name</h5>
+            <h5 class="status-request">Stage</h5>
+          </div>
+          <div class="request-status row">
+            <h5 class="status-request">Request Name</h5>
+            <h5 class="status-request">Stage</h5>
+          </div>
         </article>
       </main>
     </div>

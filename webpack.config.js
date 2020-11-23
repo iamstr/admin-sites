@@ -1,6 +1,8 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const StylelintPlugin = require("stylelint-webpack-plugin");
 module.exports = {
+  mode: "development",
   entry: "./index.js",
   output: {
     filename: "bundle.js",
@@ -9,7 +11,10 @@ module.exports = {
     wasmLoading: false
   },
 
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new StylelintPlugin({ error: true, fix: true })
+  ],
   module: {
     rules: [
       {
@@ -22,8 +27,22 @@ module.exports = {
           // Compiles Sass to CSS
           "sass-loader"
         ]
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }
       }
     ]
+  },
+  devServer: {
+    contentBase: "./dist",
+    hot: true
   },
   devtool: "source-map"
 };
