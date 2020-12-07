@@ -8,7 +8,7 @@
     <title>Check</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container flex flex-row">
       <aside class="sidebar">
         <nav class="sidebar-nav">
           <ul class="nav">
@@ -25,40 +25,57 @@
               <a href="request.html" class="url-side">Request</a>
             </li>
             <li class="nav-list">
-              <a href="approval.html" class="url-side">Approval</a>
+              <a href="create.html" class="url-side">Create New Client</a>
             </li>
           </ul>
         </nav>
       </aside>
       <main class="main" role="main">
         <article class="article">
-          <h3 class="article-header">Please Add Your Signature</h3>
-          <input id="fileInput" type="file" style="display: none" />
-          <figure
-            class="figure"
-            onclick="document.getElementById('fileInput').click();"
-          >
-            <img src="./assets/image/add.svg" alt="" />
-          </figure>
+          <h3 class="article-header">Your Requests</h3>
+          <table class="rwd-table">
+            <tr>
+              <th>Customer ID</th>
+              <th>Month Name</th>
+              <th>Paid Status</th>
+            </tr>
+            <tr>
+              <td>Content1</td>
+              <td>Content1</td>
+              <td>Content1</td>
+            </tr>
+            <tr>
+              <td>Content2</td>
+              <td>Content2</td>
+              <td>Content2</td>
+            </tr>
+            <tr>
+              <td>Content3</td>
+              <td>Content3</td>
+              <td>Content3</td>
+            </tr>
+          </table>
         </article>
         <article class="article">
           <h3 class="article-header">Your Requests</h3>
-          <div class="request-status row">
-            <h5 class="status-request">Request Name</h5>
-            <h5 class="status-request">Stage</h5>
-          </div>
-          <div class="request-status row">
-            <h5 class="status-request">Request Name</h5>
-            <h5 class="status-request">Stage</h5>
-          </div>
-          <div class="request-status row">
-            <h5 class="status-request">Request Name</h5>
-            <h5 class="status-request">Stage</h5>
-          </div>
-          <div class="request-status row">
-            <h5 class="status-request">Request Name</h5>
-            <h5 class="status-request">Stage</h5>
-          </div>
+          <table class="rwd-table">
+            <tr>
+              <th>Area</th>
+              <th>Total Customers</th>
+            </tr>
+            <tr>
+              <td>Content1</td>
+              <td>Content1</td>
+            </tr>
+            <tr>
+              <td>Content2</td>
+              <td>Content2</td>
+            </tr>
+            <tr>
+              <td>Content3</td>
+              <td>Content3</td>
+            </tr>
+          </table>
         </article>
       </main>
     </div>

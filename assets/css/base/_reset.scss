@@ -1,0 +1,16 @@
+html:root {
+    --bg: $background_light;
+    --color: $color_light;
+    --bx: $bx_light;
+    --bx-inset: $bx_inset_light;
+    background-color: $background_light;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $padauk;
+    background-color: inherit;
+    color: $color_light;
+}

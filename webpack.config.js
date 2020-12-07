@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const StylelintPlugin = require("stylelint-webpack-plugin");
 module.exports = {
   mode: "development",
-  entry: "./index.js",
+  entry: ["./index.js", path.resolve(__dirname, "assets/css/main.scss")],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -12,13 +12,13 @@ module.exports = {
   },
 
   plugins: [
-    new MiniCssExtractPlugin(),
-    new StylelintPlugin({ error: true, fix: true })
+    new MiniCssExtractPlugin()
+    // , new StylelintPlugin()
   ],
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.scss$/i,
         use: [
           // Creates `style` nodes from JS strings
           MiniCssExtractPlugin.loader,

@@ -1,0 +1,16 @@
+$padauk: "Padauk", sans-serif;
+
+$background_light: #eef7fb;
+$color_light: #08d07e;
+$bx_light: 4px 4px 4px $background_light, (-4px) -4px 4px #fff;
+$bx_inset_light: inset 4px 4px 4px $background_light, inset -4px -4px 4px #fff;
+$gradient_1: linear-gradient(90deg, rgba(1, 91, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+$bx_heavy: inset 20px 20px 60px #cad2d5, inset -20px -20px 60px #fff;
+
+// lists
+
+// space content
+$contents: center, between, space-around;
+
+// flex directon list
+$directions: row, column;
