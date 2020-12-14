@@ -99,6 +99,43 @@ body {
 }
 
 .custom-table {
-    background-color: $color_light;
-    color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+
+    th {
+        background-color: $color_light;
+        color: #fff;
+        font-size: 1.4em;
+
+        &:nth-child(1) {
+            border-radius: 10px 0 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 10px  0 0;
+        }
+    }
+
+    tr {
+        text-align: left;
+    }
+}
+
+.custom-table td, .custom-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-table tr:hover {
+    background-color: #ddd;
+}
+
+.custom-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
 }
