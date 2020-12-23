@@ -53,6 +53,12 @@
   left: 0;
   right: 0;
   z-index: 99;
+
+  // animation: fadeIn 0.3s ease-in 0.5s;
+
+  div {
+    animation: slideUp 0.3s ease-out;
+  }
 }
 
 /* hide the items when the select box is closed: */
@@ -60,7 +66,32 @@
   display: none;
 }
 
+.select-selected:hover ~ .select-hide,
+.select-hide:hover {
+  display: initial;
+}
+
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(70px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    height: auto;
+  }
+
+  100% {
+    height: fit-content;
+  }
 }
