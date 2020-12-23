@@ -19,7 +19,7 @@ body {
 .button:focus,
 .button:active {
   background: rgba(29, 216, 2, 1);
-  box-shadow: 0 4px 2px  rgba(157, 255, 142, 0.665);
+  box-shadow: 0 4px 2px rgba(157, 255, 142, 0.665);
   transition: 0.5s;
   outline: rgba(29, 216, 2, 1) auto 1px;
   color: #fff;
@@ -115,6 +115,7 @@ main {
   // border-color: #ccc;
   display: flex;
   flex-direction: column;
+
   // justify-content: center;
   // justify-items: center;
   align-items: center;
@@ -307,3 +308,49 @@ main {
     }
   }
 }
+
+.article[data-request="hide"] {
+  display: none;
+}
+
+.article[data-request="hide"].show {
+  animation: show 1s  ease-in-out reverse;
+  display: block;
+
+  .form-group.row {
+    label {
+      width: 35%;
+      height: fit-content;
+      padding-top: 1em;
+      padding-right: 1em;
+    }
+
+    input {
+      width: 100%;
+      margin: 0 3em;
+
+      &:not(&:first-child) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.form-group.row::before {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes show {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@import "select";

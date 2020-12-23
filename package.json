@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --open",
+    "start": "webpack serve ",
     "webpack:config": "npx webpack --config webpack.config.js",
     "watch": "webpack --watch",
     "dev": "concurrently --kill-others \"npm run start-watch\" \"npm run wp-server\""

@@ -8,6 +8,8 @@ module.exports = {
 
     // any other rules you'd want to change e.g.
     "scss/dollar-variable-pattern": "^foo",
-    "scss/selector-no-redundant-nesting-selector": true
+    "scss/selector-no-redundant-nesting-selector": true,
+    "no-descending-specificity": null,
+    "no-descending-specificity": null
   }
 };

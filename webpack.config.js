@@ -13,7 +13,11 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin(),
-    new StylelintPlugin({ error: true, fix: true })
+    new StylelintPlugin({
+      error: false,
+      fix: true,
+      files: "**/*.scss"
+    })
   ],
   module: {
     rules: [
