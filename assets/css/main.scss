@@ -215,6 +215,10 @@ main {
     }
   }
 
+  .request-status-table {
+    width: 100%;
+  }
+
   .request-status:first-of-type {
     margin-top: 1.4em;
   }
@@ -354,3 +358,4 @@ main {
 }
 
 @import "select";
+@import "preferences";
