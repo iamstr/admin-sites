@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+article.article.row {}
+
+.widget {
+    background-color: #fff;
+    border-radius: 10px;
+    width: auto;
+    height: 100px;
+    padding: 2em;
+    justify-content: space-between;
+    margin-left: 3.5em;
+}
+
+.widget-para {
+    font-weight: 700;
+    color: rgb(95, 99, 90);
+}
+
+.widget-header {
+    color: #738a95;
+}

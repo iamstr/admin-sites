@@ -1,8 +1,8 @@
 .sidebar {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    width: 230px;
+    width: 281.84px;
     z-index: 1;
     background: #fff;
     height: 100%;
@@ -13,8 +13,8 @@
 
         .nav-list {
             color: #fff;
-            margin-top: 1em;
-            padding-left: 1em;
+            margin-top: 1.5em;
+            padding-left: 1.5em;
 
             .url-side {
                 text-decoration: none;
@@ -22,11 +22,11 @@
             }
 
             &:hover {
-                background: $gradient_1;
-                border-radius: 30px;
+                background-color: #08d07e30;
+                border-radius: 10px;
                 padding: 1em 2em;
-                width: 90%;
-                margin-left: .7em;
+                margin-left: 0.7em;
+                margin-right: .7em;
 
                 &:last-child {
                     padding: 1em 1em;
@@ -34,8 +34,20 @@
 
                 .url-side {
                     color: #fff;
+                    background: transparent;
                 }
             }
         }
     }
+}
+
+a.url-side.row {}
+
+img.url-img {
+    width: 15%;
+}
+
+span.url-text {
+    padding-top: .2em;
+    padding-left: 1.3em;
 }

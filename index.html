@@ -13,24 +13,84 @@
         <nav class="sidebar-nav">
           <ul class="nav">
             <li class="nav-list">
-              <a href="javascript:void(0)" class="url-side">Home</a>
+              <a href="javascript:void(0)" class="url-side row">
+                <img
+                  src="assets/image/credit-card.svg"
+                  alt=""
+                  class="url-img"
+                />
+                <span class="url-text">Home</span>
+              </a>
             </li>
             <li class="nav-list">
-              <a href="setting.html" class="url-side">Setting</a>
+              <a href="setting.html" class="url-side row">
+                <img src="assets/image/settings.svg" alt="" class="url-img" />
+                <span class="url-text">Setting</span>
+              </a>
             </li>
             <li class="nav-list">
-              <a href="user.html" class="url-side">User</a>
+              <a href="user.html" class="url-side row">
+                <img src="assets/image/user.svg" alt="" class="url-img" />
+                <span class="url-text">User</span>
+              </a>
             </li>
             <li class="nav-list">
-              <a href="request.html" class="url-side">Request</a>
+              <a href="request.html" class="url-side row">
+                <img
+                  src="assets/image/envelope-alt.svg"
+                  alt=""
+                  class="url-img"
+                />
+                <span class="url-text">Send</span>
+              </a>
             </li>
             <li class="nav-list">
-              <a href="create.html" class="url-side">Create New Client</a>
+              <a href="create.html" class="url-side row">
+                <img src="assets/image/person-add.svg" alt="" class="url-img" />
+                <span class="url-text">Create New Client</span>
+              </a>
             </li>
           </ul>
         </nav>
       </aside>
       <main class="main" role="main">
+        <article class="article row">
+          <div class="widget row">
+            <img src="assets/image/credit-card.svg" alt="" class="widget-img" />
+            <div class="widget-info column">
+              <h3 class="widget-header">Total Revenue</h3>
+              <p class="widget-para">KES 2,000</p>
+            </div>
+          </div>
+          <div class="widget row">
+            <img
+              src="assets/image/envelope-alt.svg"
+              alt=""
+              class="widget-img"
+            />
+            <div class="widget-info column">
+              <h3 class="widget-header">Total SMS Sent</h3>
+              <p class="widget-para">20,000</p>
+            </div>
+          </div>
+          <div class="widget row">
+            <img src="assets/image/user.svg" alt="" class="widget-img" />
+            <div class="widget-info column">
+              <h3 class="widget-header">Total Active User</h3>
+              <p class="widget-para">15,000</p>
+            </div>
+          </div>
+          <div class="widget row">
+            <img src="assets/image/person-add.svg" alt="" class="widget-img" />
+            <div class="widget-info column">
+              <h3 class="widget-header">Total Users</h3>
+              <p class="widget-para">20,000</p>
+            </div>
+          </div>
+        </article>
+        <article class="article">
+          <canvas id="myChart" width="800" height="500"></canvas>
+        </article>
         <article class="article">
           <h3 class="article-header">Your Requests</h3>
           <table class="rwd-table">
@@ -80,5 +140,10 @@
       </main>
     </div>
     <script src="./dist/bundle.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+      defer
+    ></script>
+    <script src="./chart.js" async type="module"></script>
   </body>
 </html>
